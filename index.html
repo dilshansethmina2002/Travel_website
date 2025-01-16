@@ -27,7 +27,7 @@
         </div>
     </div> -->
 
-    <nav class="navbar navbar-expand-md bg-body-tertiary" >
+    <nav class="navbar navbar-expand-md bg-body-tertiary fixed-top">
         <div class="container-fluid">
             <img src="sources/pngimg.com - rolls_royce_PNG34.png" alt="Logo" width="40" height="30"
                 class="d-inline-block align-text-top ">
@@ -38,12 +38,12 @@
                 <span class="navbar-toggler-icon"></span>
             </button>
             <div class="collapse navbar-collapse" id="navbarNav">
-                <ul class="navbar-nav " >
+                <ul class="navbar-nav ">
                     <li class="nav-item">
                         <a class="nav-link active" aria-current="page" href="#">Home</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="#">Destination</a>
+                        <a class="nav-link" href="#destination">Destination</a>
                     </li>
                     <li class="nav-item">
                         <a class="nav-link" href="#">Activity</a>
@@ -63,69 +63,176 @@
         </div>
     </nav>
 
-    <div class="hero_container position-relative">
+    <div class="hero_container">
         <video src="sources/video1.mp4" class="video w-100" autoplay muted loop></video>
         <div class="hero_text position-absolute top-50 start-50 translate-middle text-center">
-            <h1 class="title">Welcome to Sri Lanka</h1>
+            <h1 class="title fs-sm-5">Welcome to Sri Lanka</h1>
         </div>
     </div>
 
 
-    <div class="container">
+    <div class="container-fluid custom_destination">
+        <h1 class="destination_title text-center" id="destination">Destination</h1>
+        
         <div class="row">
-            <div class="col">
-                <div class="card" style="width: 18rem;">
-                    <img src="sources/pngimg.com - rolls_royce_PNG34.png" class="card-img-top" alt="...">
+
+            <div class="col-xl-4 col-lg-6 col-md-6 col-sm-12">
+                <div class="card" style="width: 23rem;">
+                    <div id="carouselSlides" class="carousel slide carousel-fade " data-bs-ride="carousel"
+                        data-bs-interval="3000">
+                        <div class="carousel-inner">
+                            <div class="carousel-item active">
+                                <img src="sources/galle2.jpg" class="d-block w-100 img-custom" alt="...">
+                            </div>
+                            <div class="carousel-item">
+                                <img src="sources/galle1.jpg" class="d-block w-100 img-custom" alt="...">
+                            </div>
+                        </div>
+                    </div>
                     <div class="card-body">
-                        <h5 class="card-title">Card title</h5>  
-                        <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-                        <a href="#" class="btn btn-primary">Go somewhere</a>
+                        <h5 class="card-title text-center">Galle Fort</h5>
+                        <p class="card-text">Discover Galle Fort, Sri Lanka’s iconic UNESCO World Heritage Site, where
+                            charming cobblestone streets meet vibrant shops, cafes, and breathtaking ocean views.
+                        </p>
+                        <button class="btn btn-primary" onclick="showMapGalle(); document.getElementById('mapContainer').scrollIntoView({ behavior: 'smooth' });">Show on Map</button>
                     </div>
                 </div>
             </div>
 
-            <div class="col">
-                <div class="card" style="width: 18rem;">
-                    <img src="sources/pngimg.com - rolls_royce_PNG34.png" class="card-img-top" alt="...">
+            <div class="col-xl-4 col-lg-6 col-md-6 col-sm-12">
+                <div class="card" style="width: 23rem;">
+                    <div id="carouselExampleSlidesOnly" class="carousel slide carousel-fade" data-bs-ride="carousel"
+                        data-bs-interval="3000">
+                        <div class="carousel-inner">
+                            <div class="carousel-item active">
+                                <img src="sources/Sigiriya3.jpg" class="d-block w-100 img-custom" alt="...">
+                            </div>
+                            <div class="carousel-item">
+                                <img src="sources/Sigiriya5.jpg" class="d-block w-100 img-custom" alt="...">
+                            </div>
+                        </div>
+                    </div>
                     <div class="card-body">
-                        <h5 class="card-title">Card title</h5>  
-                        <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-                        <a href="#" class="btn btn-primary">Go somewhere</a>
+                        <h5 class="card-title">Sigiriya</h5>
+                        <p class="card-text">Sigiriya, Sri Lanka's iconic ancient rock fortress, landscaped gardens, and breathtaking views, offering visitors a perfect blend of
+                            history, architecture, and natural beauty. A must-visit wonder!</p>
+                        <button class="btn btn-primary" onclick="showMapSigiriya(); document.getElementById('mapContainer').scrollIntoView({ behavior: 'smooth' });">Show on Map</button>
+
                     </div>
                 </div>
             </div>
 
-            <div class="col">
-                <div class="card" style="width: 18rem;">
-                    <img src="sources/pngimg.com - rolls_royce_PNG34.png" class="card-img-top" alt="...">
+            <div class="col-xl-4 col-lg-6 col-md-6 col-sm-12">
+                <div class="card" style="width: 23rem;">
+                    <div id="carouselExampleSlidesOnly" class="carousel slide carousel-fade" data-bs-ride="carousel"
+                        data-bs-interval="3000">
+                        <div class="carousel-inner">
+                            <div class="carousel-item active">
+                                <img src="sources/arch1.jpg" class="d-block w-100 img-custom" alt="...">
+                            </div>
+                            <div class="carousel-item">
+                                <img src="sources/arch2.jpg" class="d-block w-100 img-custom" alt="...">
+                            </div>
+                        </div>
+                    </div>
                     <div class="card-body">
-                        <h5 class="card-title">Card title</h5>  
-                        <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-                        <a href="#" class="btn btn-primary">Go somewhere</a>
+                        <h5 class="card-title">Nine Arch Bridge</h5>
+                        <p class="card-text">The Nine Arch Bridge in Ella, Sri Lanka, is a stunning architectural marvel
+                            set amidst lush greenery and tea plantations, offering breathtaking views and a perfect spot
+                            for photography and exploration.
+                        </p>
+                        <button class="btn btn-primary" onclick="showMapArch(); document.getElementById('mapContainer').scrollIntoView({ behavior: 'smooth' });">Show on Map</button>
                     </div>
                 </div>
             </div>
 
-            <div class="col">
-                <div class="card" style="width: 18rem;">
-                    <img src="sources/pngimg.com - rolls_royce_PNG34.png" class="card-img-top" alt="...">
+            <div class="col-xl-4 col-lg-6 col-md-6 col-sm-12">
+                <div class="card" style="width: 23rem;">
+                    <div id="carouselExampleSlidesOnly" class="carousel slide carousel-fade" data-bs-ride="carousel"
+                        data-bs-interval="3000">
+                        <div class="carousel-inner">
+                            <div class="carousel-item active">
+                                <img src="sources/nuwara1.jpg" class="d-block w-100 img-custom" alt="...">
+                            </div>
+                            <div class="carousel-item">
+                                <img src="sources/nuwara3.jpg" class="d-block w-100 img-custom" alt="...">
+                            </div>
+                        </div>
+                    </div>
                     <div class="card-body">
-                        <h5 class="card-title">Card title</h5>  
-                        <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-                        <a href="#" class="btn btn-primary">Go somewhere</a>
+                        <h5 class="card-title">Nuwara Eliya</h5>
+                        <p class="card-text">Nuwara Eliya, known as "Little England" of Sri Lanka, is a serene hill
+                            station offering lush tea plantations, cool climate, colonial charm, vibrant gardens, and
+                            breathtaking landscapes perfect for relaxation and exploration.</p>
+                            <button class="btn btn-primary" onclick="showMapNuwara(); document.getElementById('mapContainer').scrollIntoView({ behavior: 'smooth' });">Show on Map</button>
+
                     </div>
                 </div>
             </div>
+
+            <div class="col-xl-4 col-lg-6 col-md-6 col-sm-12">
+                <div class="card" style="width: 23rem;">
+                    <div id="carouselExampleSlidesOnly" class="carousel slide carousel-fade" data-bs-ride="carousel"
+                        data-bs-interval="3000">
+                        <div class="carousel-inner">
+                            <div class="carousel-item active">
+                                <img src="sources/nuwara1.jpg" class="d-block w-100 img-custom" alt="...">
+                            </div>
+                            <div class="carousel-item">
+                                <img src="sources/nuwara3.jpg" class="d-block w-100 img-custom" alt="...">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="card-body">
+                        <h5 class="card-title">Nuwara Eliya</h5>
+                        <p class="card-text">Nuwara Eliya, known as "Little England" of Sri Lanka, is a serene hill
+                            station offering lush tea plantations, cool climate, colonial charm, vibrant gardens, and
+                            breathtaking landscapes perfect for relaxation and exploration.</p>
+                            <button class="btn btn-primary" onclick="showMapNuwara(); document.getElementById('mapContainer').scrollIntoView({ behavior: 'smooth' });">Show on Map</button>
+
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-xl-4 col-lg-6 col-md-6 col-sm-12">
+                <div class="card" style="width: 23rem;">
+                    <div id="carouselExampleSlidesOnly" class="carousel slide carousel-fade" data-bs-ride="carousel"
+                        data-bs-interval="3000">
+                        <div class="carousel-inner">
+                            <div class="carousel-item active">
+                                <img src="sources/nuwara1.jpg" class="d-block w-100 img-custom" alt="...">
+                            </div>
+                            <div class="carousel-item">
+                                <img src="sources/nuwara3.jpg" class="d-block w-100 img-custom" alt="...">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="card-body">
+                        <h5 class="card-title">Nuwara Eliya</h5>
+                        <p class="card-text">Nuwara Eliya, known as "Little England" of Sri Lanka, is a serene hill
+                            station offering lush tea plantations, cool climate, colonial charm, vibrant gardens, and
+                            breathtaking landscapes perfect for relaxation and exploration.</p>
+                            <button class="btn btn-primary" onclick="showMapNuwara(); document.getElementById('mapContainer').scrollIntoView({ behavior: 'smooth' });">Show on Map</button>
+
+                    </div>
+                </div>
+            </div>
+
+
+              
         </div>
+        <div class="mapContainer" id="mapContainer"></div>
     </div>
 
-    
-            
+
+
 
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
         crossorigin="anonymous"></script>
+    <script src="script.js"></script>
+
 </body>
 
 </html>
