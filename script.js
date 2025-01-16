@@ -1,3 +1,4 @@
+
 function showMapGalle() {
     const mapContainer = document.getElementById('mapContainer');
     mapContainer.style.display = 'block';
@@ -63,5 +64,3 @@ function showMapNuwara() {
         </iframe>
     `;
 }
-
-
