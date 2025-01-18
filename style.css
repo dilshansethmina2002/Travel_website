@@ -1,11 +1,15 @@
 @import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400..700&family=Stylish&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@600&display=swap');
 
-html{
+html {
     scroll-behavior: smooth;
-    scroll-padding-top: 100px; 
+    scroll-padding-top: 80px;
+    overflow-x: hidden;
+
 }
-.body{
+
+body {
+    overflow-x: hidden;
     margin: 0;
     padding: 0;
     font-family: 'Stylish', serif;
@@ -13,7 +17,7 @@ html{
     font-weight: 400;
 }
 
-.navbar-nav .nav-link{
+.navbar-nav .nav-link {
     font-size: 2.0em;
     font-family: "Stylish", serif;
     font-weight: 400;
@@ -24,20 +28,21 @@ html{
 }
 
 .navbar {
-    background: rgba(255, 255, 255, 0.3); /* Adjust opacity (0.3 = 30% transparent) */
-    backdrop-filter: blur(10px); /* Optional: Blur effect */
-    -webkit-backdrop-filter: blur(10px); /* For Safari support */
-    position: fixed; 
+    background: rgba(255, 255, 255, 0.3);
+    /* Adjust opacity (0.3 = 30% transparent) */
+    backdrop-filter: blur(10px);
+    /* Optional: Blur effect */
+    -webkit-backdrop-filter: blur(10px);
+    /* For Safari support */
+    position: fixed;
     width: 100%;
     top: 0;
     left: 0;
     z-index: 1000;
 }
 
-.hero_container{
+.hero_container {
     position: relative;
-    bottom: 50px;
-    padding: 0px;
     width: 100%;
     height: 107vh;
     display: flex;
@@ -45,13 +50,19 @@ html{
     align-items: center;
 
 }
-.video{
+
+.video {
+    position: absolute;
+    top: 0;
+    left: 0;
     width: 100%;
     height: 100%;
     object-fit: cover;
+    z-index: -1;
 }
 
-h1{
+
+h1 {
     font-size: 5.5em;
     font-family: "Stylish", serif;
     font-weight: 400;
@@ -61,7 +72,7 @@ h1{
     padding: 0;
 }
 
-.container h2{
+.container h2 {
     font-size: 4em;
     font-family: "Stylish", serif;
     font-weight: 400;
@@ -71,7 +82,7 @@ h1{
     padding: 0;
 }
 
-.destination_title{
+.destination_title {
     font-size: 4em;
     font-family: "Stylish", serif;
     font-weight: 400;
@@ -84,7 +95,7 @@ h1{
 
 
 
-.title{
+.title {
     font-size: 5.5em;
     font-family: "Stylish", serif;
     font-weight: 400;
@@ -94,13 +105,14 @@ h1{
     padding: 0;
 }
 
-.custom_destination{
+.custom_destination {
     background-color: #f5f5f5;
     padding: 40px;
     margin: 40px;
     padding-left: 80px;
 }
-.custom_destination_card{
+
+.custom_destination_card {
     position: relative;
     width: 20px;
     justify-content: center;
@@ -109,34 +121,35 @@ h1{
 
 }
 
-.card{
+.card {
     background-color: #f5f5f5;
     border-radius: 10px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
     padding: 20px;
     margin: 20px;
 }
-.card:hover{
+
+.card:hover {
     box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.5);
-    transform: scale3d(1.05, 1.05, 1.05);  
+    transform: scale3d(1.05, 1.05, 1.05);
     transition: transform 0.3s ease;
 }
 
-.carousel-item{
+.carousel-item {
     height: 30vh;
     display: flex;
     justify-content: center;
     align-items: center;
 }
 
-.img-custom{
+.img-custom {
     width: 100%;
     height: 100%;
     object-fit: cover;
     border-radius: 5px;
 }
 
-.card-title{
+.card-title {
     font-size: 2em;
     font-family: "Stylish", serif;
     font-weight: 400;
@@ -146,38 +159,41 @@ h1{
     padding: 0;
 }
 
-.mapContainer{
+.mapContainer {
     position: relative;
     top: 5%;
     padding: 10px;
     width: 100%;
     height: 50vh;
     border-radius: 5px;
-    box-shadow:0 0 10px rgba(0, 0, 0, 0.5);
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
 }
 
-.carousel-item-custom{
-    height: 60vh; /* Full viewport height */
+.carousel-item-custom {
+    height: 60vh;
+    /* Full viewport height */
 }
 
 .carousel-item img {
     height: 100%;
-    object-fit: cover; /* Ensures the image covers the area */
+    object-fit: cover;
+    /* Ensures the image covers the area */
 }
 
-.img-custom-activity{
+.img-custom-activity {
     width: 100%;
     height: 500px;
     object-fit: cover;
     border-radius: 5px;
 
 }
-.custom-activity{
+
+.custom-activity {
     position: relative;
     height: 500px;
 }
 
-.nature_title{
+.nature_title {
     font-size: 4em;
     font-family: "Stylish", serif;
     font-weight: 300;
@@ -187,7 +203,7 @@ h1{
     padding: 0;
 }
 
-.adventure_div{
+.adventure_div {
     position: relative;
     padding: 10px;
     width: 100%;
@@ -200,3 +216,79 @@ h1{
 }
 
 
+.about-section {
+    padding: 60px 20px;
+    text-align: center;
+}
+
+.about-text {
+    font-size: 1.2rem;
+    color: #555;
+}
+
+/* Our Team */
+.team-section {
+    background: #fff;
+    padding: 50px 20px;
+    text-align: center;
+}
+
+.team-card {
+    background: rgba(0, 0, 0, 0.05);
+    border: none;
+    border-radius: 10px;
+    transition: 0.3s;
+    padding: 20px;
+    cursor: pointer;
+}
+
+.team-card:hover {
+    background: rgba(0, 0, 0, 0.1);
+    transform: scale(1.05);
+}
+
+.icon {
+    font-size: 40px;
+    color: #007bff;
+    margin-bottom: 10px;
+}
+
+/* Why Choose Us */
+.why-choose {
+    background: #007bff;
+    color: white;
+    padding: 50px 20px;
+    text-align: center;
+}
+
+.why-choose i {
+    font-size: 50px;
+    margin-bottom: 10px;
+}
+
+/* Testimonials */
+.testimonial-section {
+    padding: 60px 20px;
+    background: #f8f9fa;
+    text-align: center;
+}
+
+.testimonial {
+    background: #fff;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+    transition: 0.3s;
+}
+
+.testimonial:hover {
+    transform: translateY(-5px);
+}
+
+
+
+.fab:hover {
+    transform: scale3d(2.05, 2.05, 2.05);
+    transition: transform 0.3s ease;
+
+}
