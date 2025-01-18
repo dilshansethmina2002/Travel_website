@@ -29,7 +29,6 @@ html{
     -webkit-backdrop-filter: blur(10px); /* For Safari support */
     position: fixed; 
     width: 100%;
-    height: 10%;
     top: 0;
     left: 0;
     z-index: 1000;
@@ -200,11 +199,4 @@ h1{
     margin-bottom: 100px;
 }
 
-
-.custom-footer{
-    background: rgba(255, 255, 255, 0.3); /* Adjust opacity (0.3 = 30% transparent) */
-    backdrop-filter: blur(10px); /* Optional: Blur effect */
-    -webkit-backdrop-filter: blur(10px); /* For Safari support */
-    z-index: 1000;
-}
 
