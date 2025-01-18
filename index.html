@@ -8,30 +8,17 @@
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
 
     <title>Document</title>
 </head>
 
-<body>
-    <!-- <div class="nav_container" id="nav_container">
-        <div class="row">
-            <div class="col-2 ">Dilshan</div>
-            <div class="col-10 ">
-                <div class="row">
-                    <div class="col">Home</div>
-                    <div class="col">Destination</div>
-                    <div class="col">Activity</div>
-                    <div class="col">Attraction</div>
-                    <div class="col">Travel Tips</div>
-                    <div class="col">About us</div>
-                </div>
-            </div>
-        </div>
-    </div> -->
-
-    <nav class="navbar navbar-expand-md bg-body-tertiary fixed-top ">
-        <div class="container-fluid ">
-            <img src="sources/pngimg.com - rolls_royce_PNG34.png" alt="Logo" width="40" height="30"
+<body >
+    <!-- Nabar -->
+    <nav class="navbar navbar-expand-lg bg-transparent fixed-top">
+        <div class="container-fluid custom-navbar-container">
+            <img src="sources/Logo.png" alt="Logo" width="100" height="100"
                 class="d-inline-block align-text-top ">
 
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
@@ -50,9 +37,6 @@
                         <a class="nav-link" href="#activites">Activity</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="#">Attraction</a>
-                    </li>
-                    <li class="nav-item">
                         <a class="nav-link" href="#">Travel Tips</a>
                     </li>
                     <li class="nav-item">
@@ -64,6 +48,7 @@
         </div>
     </nav>
 
+    <!-- hero -->
     <div class="hero_container">
         <video src="sources/video1.mp4" class="video w-100" autoplay muted loop></video>
         <div class="hero_text position-absolute top-50 start-50 translate-middle text-center">
@@ -71,12 +56,14 @@
         </div>
     </div>
 
+    <!-- destination section -->
 
     <div class="container-fluid custom_destination">
         <h1 class="destination_title text-center" id="destination">Destination</h1>
 
         <div class="row">
-
+            
+            <!-- 1card -->
             <div class="col-xl-4 col-lg-6 col-md-6 col-sm-12" data-aos="fade-right" data-aos-duration="800">
                 <div class="card mx-auto" style="width: 23rem;">
                     <div id="carouselSlides" class="carousel slide carousel-fade " data-bs-ride="carousel"
@@ -102,6 +89,7 @@
                 </div>
             </div>
 
+            <!-- Card2 -->
             <div class="col-xl-4 col-lg-6 col-md-6 col-sm-12" data-aos="zoom-in" data-aos-duration="800">
                 <div class="card mx-auto" style="width: 23rem;">
                     <div id="carouselExampleSlidesOnly" class="carousel slide carousel-fade" data-bs-ride="carousel"
@@ -127,7 +115,7 @@
                     </div>
                 </div>
             </div>
-
+            <!-- card3 -->
             <div class="col-xl-4 col-lg-6 col-md-6 col-sm-12" data-aos="fade-left" data-aos-duration="800">
                 <div class="card mx-auto" style="width: 23rem;">
                     <div id="carouselExampleSlidesOnly" class="carousel slide carousel-fade" data-bs-ride="carousel"
@@ -153,7 +141,7 @@
                     </div>
                 </div>
             </div>
-
+            <!-- Card4 -->
             <div class="col-xl-4 col-lg-6 col-md-6 col-sm-12" data-aos="fade-right" data-aos-duration="800">
                 <div class="card mx-auto" style="width: 23rem;">
                     <div id="carouselExampleSlidesOnly" class="carousel slide carousel-fade" data-bs-ride="carousel"
@@ -179,25 +167,31 @@
                     </div>
                 </div>
             </div>
-
+            <!-- Card5 -->
             <div class="col-xl-4 col-lg-6 col-md-6 col-sm-12" data-aos="zoom-in" data-aos-duration="800">
                 <div class="card mx-auto" style="width: 23rem;">
                     <div id="carouselExampleSlidesOnly" class="carousel slide carousel-fade" data-bs-ride="carousel"
                         data-bs-interval="3000">
                         <div class="carousel-inner">
                             <div class="carousel-item active">
-                                <img src="sources/nuwara1.jpg" class="d-block w-100 img-custom" alt="...">
+                                <img src="sources/SL_Kandy_asv2020-01_img04_Queens_Hotel.jpg" class="d-block w-100 img-custom" alt="...">
                             </div>
                             <div class="carousel-item">
-                                <img src="sources/nuwara3.jpg" class="d-block w-100 img-custom" alt="...">
+                                <img src="sources/temple-sacred-tooth-relic-kandy-sri-lanka.jpg" class="d-block w-100 img-custom" alt="...">
+                            </div>
+                            <div class="carousel-item">
+                                <img src="sources/800px-Sri_lanka_kandy_esala_perahera.jpg" class="d-block w-100 img-custom" alt="...">
                             </div>
                         </div>
                     </div>
                     <div class="card-body">
-                        <h5 class="card-title">Nuwara Eliya</h5>
-                        <p class="card-text">Nuwara Eliya, known as "Little England" of Sri Lanka, is a serene hill
-                            station offering lush tea plantations, cool climate, colonial charm, vibrant gardens, and
-                            breathtaking landscapes perfect for relaxation and exploration.</p>
+                        <h5 class="card-title">Kandy</h5>
+                        <p class="card-text">Kandy, the cultural capital of Sri Lanka, is a historic city surrounded by misty hills.
+                             Home to the sacred Temple of the Tooth Relic, serene lakes,
+                             vibrant festivals, and rich traditions,
+                             it offers a perfect blend of heritage and natural beauty.
+
+                        </p>
                         <button class="btn btn-primary"
                             onclick="showMapNuwara(); document.getElementById('mapContainer').scrollIntoView({ behavior: 'smooth' });">Show
                             on Map</button>
@@ -205,7 +199,7 @@
                     </div>
                 </div>
             </div>
-
+            <!-- Card6 -->
             <div class="col-xl-4 col-lg-6 col-md-6 col-sm-12" data-aos="fade-left" data-aos-duration="800">
                 <div class="card mx-auto" style="width: 23rem;">
                     <div id="carouselExampleSlidesOnly" class="carousel slide carousel-fade" data-bs-ride="carousel"
@@ -233,26 +227,46 @@
             </div>
 
 
-
+        <!-- map -->
         </div>
-        <div class="mapContainer" id="mapContainer"></div>
+            <div class="mapContainer" id="mapContainer">            
+        </div>
+        
     </div>
 
+    <!-- Activites -->
     <div class="container">
         <h1 class="activites_title text-center" id="activites">Activites</h1><br><br>
 
+        <!-- Nature and Adventure -->
         <div class="row adventure_div" data-aos="zoom-in-up" data-aos-duration="800">
             <div class="col-lg-6 col-md-12">
                 <div id="carouselExampleSlidesOnly" class="carousel slide carousel-fade" data-bs-ride="carousel"
                     data-bs-interval="3000">
                     <div class="carousel-inner">
-                        <div
-                            class="carousel-item active custom-activity d-flex justify-content-center align-items-center">
-                            <img src="sources/nuwara1.jpg" class="d-block w-70 img-custom-activity" alt="...">
+                        <div class="carousel-item active custom-activity d-flex justify-content-center align-items-center">
+                            <img src="sources/horton-plains-min.jpg" class="d-block w-70 img-custom-activity" alt="...">
+                            <div class="carousel-caption d-none d-md-block">
+                                <h2>Horton Plains</h2>
+                                <p>Some representative placeholder content for the second slide.</p>
+                            </div>
                         </div>
                         <div class="carousel-item custom-activity d-flex justify-content-center align-items-center">
-                            <img src="sources/nuwara3.jpg" class="d-block w-70 img-custom-activity" alt="...">
+                            <img src="sources/horton10-min.jpg" class="d-block w-70 img-custom-activity" alt="...">
+                            <div class="carousel-caption d-none d-md-block">
+                                <h2>Horton Plains</h2>
+                                <p>Some representative placeholder content for the second slide.</p>
+                            </div>
                         </div>
+
+                        <div class="carousel-item custom-activity d-flex justify-content-center align-items-center">
+                            <img src="sources/yala.jpg" class="d-block w-70 img-custom-activity" alt="...">
+                            <div class="carousel-caption d-none d-md-block ">
+                                <h2>Yala National Park</h2>
+                                <p>Some representative placeholder content for the second slide.</p>
+                            </div>
+                        </div>
+
                     </div>
                 </div>
             </div>
@@ -269,8 +283,10 @@
             </div>
         </div>
         <br><br><br>
+
+        <!-- Cultural and Historical -->
         <div class="row adventure_div" data-aos="zoom-in-up" data-aos-duration="800">
-            <div class="col-lg-6 col-md-12 order-md-2 order-lg-1 ">
+            <div class="col-lg-6 col-md-12 order-2  order-lg-1 ">
                 <div class="justify-content-center align-items-center">
                     <h1 class="nature_title">Cultural & Historical</h1><br>
                     <p style="font-size: 20px;">Step into the past and uncover the rich heritage of breathtaking
@@ -286,25 +302,34 @@
                 </div>
             </div>
 
-            <div class="col-lg-6 col-md-12 order-md-1 order-lg-2">
+            <div class="col-lg-6 col-md-12 order-1 order-lg-2">
                 <div id="carouselExampleSlidesOnly" class="carousel slide carousel-fade" data-bs-ride="carousel"
                     data-bs-interval="3000">
 
                     <div class="carousel-inner ">
                         <div
                             class="carousel-item active custom-activity d-flex justify-content-center align-items-center ">
-                            <img src="sources/nuwara1.jpg" class="d-block w-70 img-custom-activity" alt="...">
+                            <img src="sources/temple-sacred-tooth-relic-kandy-sri-lanka.jpg" class="d-block w-70 img-custom-activity" alt="...">
+                            <div class="carousel-caption d-none d-md-block">
+                                <h2>Temple Of Tooth </h2>
+                                <p>Some representative placeholder content for the second slide.</p>
+                            </div>
                         </div>
 
                         <div class="carousel-item custom-activity d-flex justify-content-center align-items-center">
-                            <img src="sources/nuwara3.jpg" class="d-block w-70 img-custom-activity" alt="...">
+                            <img src="sources/sigiriya-056-1296x700.jpg" class="d-block w-70 img-custom-activity" alt="...">
+                            <div class="carousel-caption d-none d-md-block">
+                                <h2>Sigiriya</h2>
+                                <p>Some representative placeholder content for the second slide.</p>
+                            </div>
                         </div>
                     </div>
                 </div>
             </div>
 
         </div>
-
+        <br><br><br>
+        <!-- Beach and Water -->
         <div class="row adventure_div" data-aos="zoom-in-up" data-aos-duration="800">
             <div class="col-lg-6 col-md-12">
                 <div id="carouselExampleSlidesOnly" class="carousel slide carousel-fade" data-bs-ride="carousel"
@@ -312,10 +337,18 @@
                     <div class="carousel-inner">
                         <div
                             class="carousel-item active custom-activity d-flex justify-content-center align-items-center">
-                            <img src="sources/nuwara1.jpg" class="d-block w-70 img-custom-activity" alt="...">
+                            <img src="sources/unawatuna.jpg" class="d-block w-70 img-custom-activity" alt="...">
+                            <div class="carousel-caption d-none d-md-block">
+                                <h2>Unawatuna Beach</h2>
+                                <p>Some representative placeholder content for the second slide.</p>
+                            </div>
                         </div>
                         <div class="carousel-item custom-activity d-flex justify-content-center align-items-center">
-                            <img src="sources/nuwara3.jpg" class="d-block w-70 img-custom-activity" alt="...">
+                            <img src="sources/adventure.jpg" class="d-block w-70 img-custom-activity" alt="...">
+                            <div class="carousel-caption d-none d-md-block">
+                                <h2>Water Boats</h2>
+                                <p>Some representative placeholder content for the second slide.</p>
+                            </div>
                         </div>
                     </div>
                 </div>
@@ -343,11 +376,116 @@
 
 
     </div>
+    <!-- Footer -->
+    <div class="container-fluid my-5 bg-transparent custom-footer">
+    <footer
+            class="text-center text-lg-start text-white"
+            style="background-color: #929fba"
+            >
+      <div class="container p-4 pb-0">
+        <section class="">
+          <div class="row">
+            <div class="col-md-3 col-lg-3 col-xl-3 mx-auto mt-3">
+              <h6 class="text-uppercase mb-4 font-weight-bold">
+                Company name
+              </h6>
+              <p>
+                "Stay connected with us for the best travel experiences! Explore breathtaking destinations, exciting adventures, and rich cultural heritage."
+              </p>
+            </div>
+            <hr class="w-100 clearfix d-md-none" />
+  
+            
+            
+  
+            <hr class="w-100 clearfix d-md-none" />
+  
+            
+            <hr class="w-100 clearfix d-md-none" />
+  
+            
+            <div class="col-md-4 col-lg-3 col-xl-3 mx-auto mt-3">
+              <h6 class="text-uppercase mb-4 font-weight-bold">Contact</h6>
+              <p><i class="fas fa-home mr-3"></i> Galle, SRI LANKA</p>
+              <p><i class="fas fa-envelope mr-3"></i> sethminadilshan@gmail.com</p>
+              <p><i class="fas fa-phone mr-3"></i> +94 76 128 7292</p>
+              <p><i class="fas fa-print mr-3"></i> +94 74 107 1906</p>
+            </div>
 
-    <div class="container">
-        <h1 class="attraction_title text-center" id="attraction">Attraction</h1>
-    </div>
-
+            <div class="col-md-3 col-lg-2 col-xl-2 mx-auto mt-3">
+              <h6 class="text-uppercase mb-4 font-weight-bold">Follow us</h6>
+  
+              <a
+                 class="btn btn-primary btn-floating m-1"
+                 style="background-color: #3b5998"
+                 href="#!"
+                 role="button"
+                 ><i class="fab fa-facebook-f"></i
+                ></a>
+  
+  
+              <a
+                 class="btn btn-primary btn-floating m-1"
+                 href="#!"
+                 role="button"
+                 ><i class="fab fa-twitter"></i
+                ></a>
+  
+              <a
+                 class="btn btn-primary btn-floating m-1"
+                 style="background-color: #dd4b39"
+                 href="#!"
+                 role="button"
+                 ><i class="fab fa-google"></i
+                ></a>
+  
+              <a
+                 class="btn btn-primary btn-floating m-1"
+                 style="background-color: #ac2bac"
+                 href="#!"
+                 role="button"
+                 ><i class="fab fa-instagram"></i
+                ></a>
+  
+  
+              <a
+                 class="btn btn-primary btn-floating m-1"
+                 style="background-color: #0082ca"
+                 href="#!"
+                 role="button"
+                 ><i class="fab fa-linkedin-in"></i
+                ></a>
+  
+              <a
+                 class="btn btn-primary btn-floating m-1"
+                 style="background-color: #333333"
+                 href="#!"
+                 role="button"
+                 ><i class="fab fa-github"></i
+                ></a>
+            </div>
+          </div>
+  
+        </section>
+  
+      </div>
+  
+  
+  
+      <div
+           class="text-center p-3"
+           style="background-color: rgba(0, 0, 0, 0.2)"
+           >
+        © 2025 Copyright:
+        <a class="text-white"
+           >Dilshan Sethmina</a
+          >
+      </div>
+  
+    </footer>
+  
+  </div>
+  
 
 
 
@@ -356,6 +494,11 @@
         integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
         crossorigin="anonymous"></script>
     <script src="script.js"></script>
+    <script>
+        window.onload = function() {
+            showMapNuwara();
+        };
+    </script>
 
     <script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.js"></script>
     <script>

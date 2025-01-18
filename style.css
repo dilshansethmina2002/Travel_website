@@ -1,5 +1,10 @@
 @import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400..700&family=Stylish&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@600&display=swap');
 
+html{
+    scroll-behavior: smooth;
+    scroll-padding-top: 100px; 
+}
 .body{
     margin: 0;
     padding: 0;
@@ -8,13 +13,26 @@
     font-weight: 400;
 }
 
-.custom_navbar{
-    position: relative;
-    justify-content: end;
-    align-items: end;
-    height: 50px;
+.navbar-nav .nav-link{
+    font-size: 2.0em;
+    font-family: "Stylish", serif;
+    font-weight: 400;
+    font-style: normal;
+    color: #000;
+    margin: 0;
+    padding: 0;
+}
+
+.navbar {
+    background: rgba(255, 255, 255, 0.3); /* Adjust opacity (0.3 = 30% transparent) */
+    backdrop-filter: blur(10px); /* Optional: Blur effect */
+    -webkit-backdrop-filter: blur(10px); /* For Safari support */
+    position: fixed; 
     width: 100%;
-    padding: 20px;
+    height: 10%;
+    top: 0;
+    left: 0;
+    z-index: 1000;
 }
 
 .hero_container{
@@ -34,12 +52,22 @@
     object-fit: cover;
 }
 
-.h1{
+h1{
     font-size: 5.5em;
     font-family: "Stylish", serif;
     font-weight: 400;
     font-style: normal;
     color: #000;
+    margin: 0;
+    padding: 0;
+}
+
+.container h2{
+    font-size: 4em;
+    font-family: "Stylish", serif;
+    font-weight: 400;
+    font-style: normal;
+    color: #ffffff;
     margin: 0;
     padding: 0;
 }
@@ -129,6 +157,15 @@
     box-shadow:0 0 10px rgba(0, 0, 0, 0.5);
 }
 
+.carousel-item-custom{
+    height: 60vh; /* Full viewport height */
+}
+
+.carousel-item img {
+    height: 100%;
+    object-fit: cover; /* Ensures the image covers the area */
+}
+
 .img-custom-activity{
     width: 100%;
     height: 500px;
@@ -162,3 +199,12 @@
     margin-top: 50px;
     margin-bottom: 100px;
 }
+
+
+.custom-footer{
+    background: rgba(255, 255, 255, 0.3); /* Adjust opacity (0.3 = 30% transparent) */
+    backdrop-filter: blur(10px); /* Optional: Blur effect */
+    -webkit-backdrop-filter: blur(10px); /* For Safari support */
+    z-index: 1000;
+}
+

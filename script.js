@@ -64,3 +64,5 @@ function showMapNuwara() {
         </iframe>
     `;
 }
+
+feather.replace()
